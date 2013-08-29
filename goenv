@@ -1,16 +1,5 @@
 #!/bin/bash
 # source goenv
-if [[ -z $GOROOT ]] ; then
-    if [[ -e golang ]] ; then
-        export GOROOT=$(pwd)/golang
-    else
-        echo "GOROOT is empty, please export GOROOT to your go source root."
-        echo "Or run "
-        echo "    hg clone -u release https://code.google.com/p/go"
-        echo "To get the golang source"
-        return
-    fi
-fi
 
 GOLIB=$(pwd)/go
 GOVENDOR=$(pwd)/go/vendor

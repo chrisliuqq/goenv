@@ -8,7 +8,7 @@ if [[ -z $GOROOT ]] ; then
         echo "Or run "
         echo "    hg clone -u release https://code.google.com/p/go"
         echo "To get the golang source"
-        exit 1
+        return
     fi
 fi
 
